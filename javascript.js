@@ -27,4 +27,22 @@ function playRound(playerChoice, computerChoice) {
   }
 }
 
-console.log(playRound('scissors','paper'));
+function game() {
+  const maxGames = 5;
+  let currentGameCount = 0;
+  let running = true;
+  while (running) {
+    currentGameCount++;
+    let playerChoice = prompt('Enter rock paper or scissors');
+    let computerChoice = getComputerChoice();
+
+    console.log(playRound(playerChoice, computerChoice));
+    
+    if (currentGameCount === maxGames) {
+      running = false;
+    }
+  }
+}
+
+game();
+
