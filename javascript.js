@@ -33,7 +33,7 @@ function game() {
   let running = true;
   while (running) {
     currentGameCount++;
-    let playerChoice = prompt('Enter rock paper or scissors');
+//    let playerChoice = prompt('Enter rock paper or scissors');
     let computerChoice = getComputerChoice();
 
     console.log(playRound(playerChoice, computerChoice));
