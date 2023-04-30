@@ -3,9 +3,41 @@ body {
   font-family: 'Caveat', cursive;
 }
 
+.text-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-display h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 55px;
+  color: rgb(200,200,200);
+  margin-top: 20px;
+}
+
+.output p {
+  text-align: center;
+  font-size: 30px;
+  width: 500px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: row;
+  gap: 200px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  background-color: rgb(40,40,40);
+  padding: 0px 100px 0px 100px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  color: white;
+}
+
 .choice-container {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 300px; margin-right: 300px;
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -26,6 +58,29 @@ body {
   border-radius: 15px;
   padding: 20px 0px 20px 0px;
   object-fit: cover;
-  background-color: white;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  transition-duration: 0.2s;
 }
+
+.choice-container img:hover {
+  box-shadow: 0px 0px 45px rgba(0,0,0,0.5);
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.choice-container img:active {
+  background-color: red;
+}
+
+#vs {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.choice-container p {
+  color: rgb(100,100,100);
+}
+
